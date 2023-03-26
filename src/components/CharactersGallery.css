@@ -1,0 +1,13 @@
+.CharactersGallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	/* background-color: rgba(0, 0, 0, 0.2); */
+}
+
+.loadingData {
+	padding: 50vh 0 0 0;
+	flex: 0 0 auto;
+	font-size: 20px;
+}

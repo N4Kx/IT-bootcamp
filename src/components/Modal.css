@@ -1,0 +1,125 @@
+.modalWindow {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	pointer-events: none;
+	transition: 0.5s;
+}
+
+.modalWindow.active {
+	opacity: 1;
+	pointer-events: all;
+}
+
+.modalWindow__content {
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	width: 50vw;
+	transform: scale(0);
+	transition: 0.5s;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: 1fr;
+}
+
+.modalWindow__content.active {
+	transform: scale(1);
+}
+
+.modalWindow_image {
+	border-radius: 10px;
+	grid-column: 1/2;
+	grid-row: 1/7;
+}
+
+.modalWindow__charInfo {
+	display: grid;
+	grid-template-columns: repeat(2, 0.5fr);
+	grid-template-rows: repeat(6, 1fr);
+}
+
+.charInfo__subtitle {
+
+	align-self: end;
+	justify-self: center;
+	font-family: sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.charInfo__text {
+
+	align-self: top;
+	justify-self: center;
+	font-family: sans-serif;
+	font-size: 16px;
+}
+
+.charInfo__name {
+	grid-column: 1/2;
+	grid-row: 1/2;
+}
+
+.charInfo__nameData {
+	grid-column: 1/2;
+	grid-row: 2/3;
+}
+
+
+.charInfo__origin {
+	grid-column: 2/3;
+	grid-row: 1/2;
+}
+
+.charInfo__originData {
+	grid-column: 2/3;
+	grid-row: 2/3;
+}
+
+.charInfo__status {
+	grid-column: 1/2;
+	grid-row: 3/4;
+}
+
+.charInfo__statusData {
+	grid-column: 1/2;
+	grid-row: 4/5;
+}
+
+.charInfo__location {
+	grid-column: 2/3;
+	grid-row: 3/4;
+}
+
+.charInfo__locationData {
+	grid-column: 2/3;
+	grid-row: 4/5;
+}
+
+.charInfo__species {
+	grid-column: 1/2;
+	grid-row: 5/6;
+}
+
+.charInfo__speciesData {
+	grid-column: 1/2;
+	grid-row: 6/7;
+}
+
+.charInfo__gender {
+	grid-column: 2/3;
+	grid-row: 5/6;
+}
+
+.charInfo__genderData {
+	grid-column: 2/3;
+	grid-row: 6/7;
+}

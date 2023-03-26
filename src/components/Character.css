@@ -1,0 +1,16 @@
+.Character__wrapper {
+	display: flex;
+	flex-direction: column;
+	padding: 20px 5px;
+}
+
+.Character__picture {
+	flex: 0 0 200px;
+	height: 19vw;
+	border-radius: 10px;
+}
+
+.Character__name {
+	padding: 5px 0 0 0;
+	text-align: center;
+}
