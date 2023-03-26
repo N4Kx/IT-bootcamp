@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef, useLayoutEffect, Fragment, useCallback } from 'react';
+import React, { useEffect, useState, useRef, useCallback } from 'react';
 import Character from './Character';
 
 import { rickormortyLoad } from '../redux/rickormortyLoad'

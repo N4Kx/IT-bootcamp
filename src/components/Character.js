@@ -4,7 +4,7 @@ import './Character.css';
 
 const Character = ({ imgUrl, name, id, cbGoToModal }) => {
 	const [characterID, setCharacterID] = useState(id);
-	const [selected, setSelected] = useState(false);
+	// const [selected, setSelected] = useState(false);
 
 	const select = (eo) => {
 		// setSelected(true);
